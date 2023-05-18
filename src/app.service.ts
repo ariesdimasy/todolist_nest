@@ -2,8 +2,14 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return '<h1> Aries Dimas !</h1>';
+  getHello(): object {
+    return {
+      success: true,
+      message: 'welcome to nest js',
+      data: {
+        foo: 'bar',
+      },
+    };
   }
 
   getFoo(): string {
