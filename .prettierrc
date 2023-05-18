@@ -1,4 +1,14 @@
 {
   "singleQuote": true,
-  "trailingComma": "all"
+  "prettier/prettier": [
+    "error",
+    {},
+    {
+      "usePrettierrc": false,
+      "fileInfoOptions": {
+        "withNodeModules": true
+      },
+      "endOfLine": "auto"
+    }
+  ]
 }
