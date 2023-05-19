@@ -1,9 +1,10 @@
-interface Task {
+export interface Task {
   task_id: number;
   task_name: string;
   task_description: string;
 }
-export const task: Task[] = [
+
+export const tasks: Task[] = [
   {
     task_id: 1,
     task_name: 'Task 1',

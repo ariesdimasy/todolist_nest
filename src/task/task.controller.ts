@@ -4,7 +4,7 @@ import { CreateTaskDTO } from './dto/create-task.dto';
 
 @Controller('task')
 export class TaskController {
-  constructor(private taskService: TaskService) {}
+  constructor (private taskService: TaskService) { }
 
   @Post()
   async createTask(@Body() body: CreateTaskDTO) {
@@ -14,5 +14,10 @@ export class TaskController {
   @Get()
   async getAllTask() {
     return await this.taskService.getAllTask();
+  }
+
+  @Get('/:id')
+  async getTaskById(id) {
+    return await this.taskService.getTaskById(id);
   }
 }
