@@ -2,13 +2,14 @@
   "singleQuote": true,
   "prettier/prettier": [
     "error",
-    {},
+    {
+      "endOfLine": "auto"
+    },
     {
       "usePrettierrc": false,
       "fileInfoOptions": {
         "withNodeModules": true
-      },
-      "endOfLine": "auto"
+      }
     }
   ]
 }
