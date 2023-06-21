@@ -17,3 +17,14 @@ model tasks {
   created_at  DateTime @default(now())
   updated_at DateTime @updatedAt
 }
+
+model users { 
+  id Int @id @default(autoincrement())
+  name String
+  email String @unique
+  password String 
+  avatar String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
